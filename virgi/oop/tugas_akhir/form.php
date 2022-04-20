@@ -54,21 +54,21 @@
 
                         <div class="mb-3 ">
                             <label class="form-label">NIS</label>
-                            <input required placeholder="Masukkan NIS siswa" type="text" name="nis" class="form-control">
+                            <input required placeholder="Masukkan NIS siswa" type="number" name="nis" class="form-control">
                         </div>
 
                         <div class="mb-3 ">
                             <label class="form-label">Nama Siswa </label>
-                            <input required placeholder="Masukkan nama siswa" type="name" name="nama" class="form-control">
+                            <input required placeholder="Masukkan nama siswa" type="text" name="nama" class="form-control">
                         </div>
                         
                         <div class="mb-3">
                             <label class="form-label">Jurusan</label>
                             <select required class="form-select" name="jurusan" aria-label="Default select example">
                                 <option selected hidden> Pilih Jurusan </option>
-                                <option value="RPL">Rekayasa Perangkat Lunak</option>
+                                <option value="Rekayasa Perangkat Lunak">Rekayasa Perangkat Lunak</option>
                                 <option value="Teknik Kendaraan Ringan Otomotif">Teknik Kendaraan Ringan Otomotif</option>
-                                <option value="Teknik Berbisnis Sepeda Motor">Teknik Berbisnis Sepeda Motor</option>
+                                <option value="Teknik dan Bisnis Sepeda Motor">Teknik Berbisnis Sepeda Motor</option>
                             </select>
                         </div>
 
@@ -89,7 +89,7 @@
                             <div class="col-md-3">
                                 <select required class="form-select mb-1" name="jurusan2" aria-label="Default select example">
                                     <option value="RPL"> RPL </option>
-                                    <option value="TKRO"> TKRO </option>
+                                    <option value="TKRO"> TKRO</option>
                                     <option value="TBSM"> TBSM </option>
                                 </select>
                             </div>
