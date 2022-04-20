@@ -52,41 +52,8 @@
                 if(isset($_POST['kirim'])){
                     $level = $_POST['level'];
 
-                    class Titan {
-
-                        public $level;
-
-                        public function __construct($level){
-                            $this->level = $level;
-                        }
-                    }
-
-                    class Human extends Titan{
-                        public function killAlltitan(){
-                            $ket = "Sasageyo... Shinzo Sasageyo...";
-                            return $ket;
-                        }
-                    }
-                    class beastTitan extends Titan{
-                        public function lempar(){
-                            $ket = "Wush wush...";
-                            return $ket;
-                        }
-                        
-                    }
-                    class attackTitan extends Titan{
-                        public function punch(){
-                            $ket = "Blamm blam...";
-                            return $ket;
-                        }
-                    }
-                    class armorTitan extends Titan{
-                        public function terjang(){
-                            $ket = "Dushh... dush...";
-                            return $ket;
-                        }
-                    }
-
+                    require_once "./titan.php";
+                    
                     ?>
 
                     <!DOCTYPE html>
@@ -101,13 +68,8 @@
                     </head>
                     <body">
 
-                    <?php $human = new Human($level); ?>
-                    <?php $beast = new beastTitan($level); ?>
-                    <?php $attack = new attackTitan($level); ?>
-                    <?php $armor = new armorTitan($level); ?>
-                        
+                    <?php $human = new Human($level); ?>                        
                         <div class="container-fluid mt-4">
-
                             <div class="row justify-content-center">
                                 <div class="col-md-6">
                                     <table class="table table-bordered center table-hover ">
@@ -133,7 +95,8 @@
                                 </div>
                             </div>
                         </div>
-                        
+
+                    <?php $beast = new beastTitan($level); ?>    
                         <div class="container-fluid mt-4">
 
                             <div class="row justify-content-center">
@@ -162,6 +125,7 @@
                             </div>
                         </div>
 
+                    <?php $attack = new attackTitan($level); ?>
                         <div class="container-fluid mt-4">
 
                             <div class="row justify-content-center">
@@ -190,6 +154,7 @@
                             </div>
                         </div>
 
+                    <?php $armor = new armorTitan($level); ?>    
                         <div class="container-fluid mt-4">
 
                             <div class="row justify-content-center">

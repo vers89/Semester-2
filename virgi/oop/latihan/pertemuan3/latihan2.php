@@ -225,7 +225,6 @@
                                         <th class="text-center" colspan="4">Nilai Siswa</th>
                                     </tr>
                                     
-                                    </tr>
                                 </thead>
                                 <tbody>
                                     <tr class="table-secondary" >
