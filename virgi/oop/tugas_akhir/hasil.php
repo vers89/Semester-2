@@ -137,11 +137,11 @@
 
                         <div class="row justify-content-center ">
                             <div class="col-md-7">
-                                <table class="table table-bordered rounded table-hover center " > 
+                                <table class="table table-bordered rounded table-hover " > 
                                     <thead>
                                         <tr class="table-success">
                                             <th></th>
-                                            <th>Matematika</th>
+                                            <th>Bahasa Indonesia</th>
                                             <th>Bahasa Inggris</th>
                                             <th>Matematika</th>
                                             <th>Produktif</th>
@@ -154,37 +154,37 @@
                                     <?php $produktif = new Produktif( $hadir4, $tugas4 , $absen4 , $ujian4 ); ?>
 
                                     <tbody>
-                                        <tr class="table-secondary" >
+                                        <tr class="table-secondary " >
                                             <td>Nilai Kehadiran</td>
-                                            <td> <?= $hadir1 ?></td>
-                                            <td> <?= $hadir2 ?></td>
-                                            <td> <?= $hadir3 ?></td>
-                                            <td> <?= $hadir4 ?></td>
+                                            <td class="text-center" > <?= $hadir1 ?></td>
+                                            <td class="text-center" > <?= $hadir2 ?></td>
+                                            <td class="text-center" > <?= $hadir3 ?></td>
+                                            <td class="text-center" > <?= $hadir4 ?></td>
                                         </tr>
                                         <tr class="table-secondary" >
                                             <td>Nilai Tugas</td>
-                                            <td> <?= $tugas1 ?></td>
-                                            <td> <?= $tugas2 ?></td>
-                                            <td> <?= $tugas3 ?></td>
-                                            <td> <?= $tugas4 ?></td>
+                                            <td class="text-center" > <?= $tugas1 ?></td>
+                                            <td class="text-center" > <?= $tugas2 ?></td>
+                                            <td class="text-center" > <?= $tugas3 ?></td>
+                                            <td class="text-center" > <?= $tugas4 ?></td>
                                         </tr>
                                         <tr class="table-secondary" >
                                             <td>Nilai Absen</td>
-                                            <td> <?= $absen1 ?></td>
-                                            <td> <?= $absen2 ?></td>
-                                            <td> <?= $absen3 ?></td>
-                                            <td> <?= $absen4 ?></td>
+                                            <td class="text-center" > <?= $absen1 ?></td>
+                                            <td class="text-center" > <?= $absen2 ?></td>
+                                            <td class="text-center" > <?= $absen3 ?></td>
+                                            <td class="text-center" > <?= $absen4 ?></td>
                                         </tr>
                                         <tr class="table-secondary" >
                                             <td>Nilai Ujian</td>
-                                            <td> <?= $ujian1 ?></td>
-                                            <td> <?= $ujian2 ?></td>
-                                            <td> <?= $ujian3 ?></td>
-                                            <td> <?= $ujian4 ?></td>
+                                            <td class="text-center" > <?= $ujian1 ?></td>
+                                            <td class="text-center" > <?= $ujian2 ?></td>
+                                            <td class="text-center" > <?= $ujian3 ?></td>
+                                            <td class="text-center" > <?= $ujian4 ?></td>
                                         </tr>
                                     </tbody>   
                                     <thead>
-                                        <tr class="table-danger"  >
+                                        <tr class="table-danger text-center" >
                                             <th>Nilai Akhir</th>
                                             <th> <?= $indonesia->hitung() ?></th>
                                             <th> <?= $inggris->hitung() ?></th>
