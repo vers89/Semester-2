@@ -51,7 +51,7 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                        <div class="navbar-nav ms-5">
+                        <div class="navbar-nav ms-4">
                             <a class="nav-link" aria-current="page" href="#tubuuh">Hasil</a>
                         </div>
                     </div>
@@ -90,7 +90,7 @@
                             <div class="col-md-7">
                                 
                                 
-                                <table class="table table-bordered rounded table-hover center " > 
+                                <table class="table table-hover center " > 
                                     <thead>
                                         <tr class="table-success">
                                             <th class="text-center" colspan="4">Data Siswa</th>
@@ -104,18 +104,22 @@
                                     <tbody>
                                         <tr class="table-secondary" >
                                             <td>Nis</td>
+                                            <td> : </td>
                                             <td><?= $data->nis?> </td>
                                         </tr>
                                         <tr class="table-secondary" >
                                             <td>Nama</td>
+                                            <td> : </td>
                                             <td><?= $data->nama ?> </td>
                                         </tr>
                                         <tr class="table-secondary">
                                             <td>Jurusan</td>
+                                            <td> : </td>
                                             <td><?= $data->jurusan ?> </td>
                                         </tr>
                                         <tr class="table-secondary">
                                             <td>Kelas </td>
+                                            <td> : </td>
                                             <td><?= $data->getKelas()?> </td>
                                         </tr>
                                     </tbody>    
@@ -178,16 +182,16 @@
                                             <td> <?= $ujian3 ?></td>
                                             <td> <?= $ujian4 ?></td>
                                         </tr>
-                                        <tr class="table-danger" >
+                                    </tbody>   
+                                    <thead>
+                                        <tr class="table-danger"  >
                                             <th>Nilai Akhir</th>
                                             <th> <?= $indonesia->hitung() ?></th>
                                             <th> <?= $inggris->hitung() ?></th>
                                             <th> <?= $matematika->hitung() ?></th>
                                             <th> <?= $produktif->hitung() ?></th>
                                         </tr>
-
-                                        
-                                    </tbody>    
+                                    </thead> 
                                 </table>
                             </div>
                         </div>

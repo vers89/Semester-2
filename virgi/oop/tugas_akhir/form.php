@@ -18,7 +18,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav ms-5">
+                <div class="navbar-nav ms-4">
                     <a class="nav-link" aria-current="page" href="#tubuh">Home</a>
                 </div>
             </div>
@@ -68,16 +68,14 @@
                                 <option selected hidden> Pilih Jurusan </option>
                                 <option value="Rekayasa Perangkat Lunak">Rekayasa Perangkat Lunak</option>
                                 <option value="Teknik Kendaraan Ringan Otomotif">Teknik Kendaraan Ringan Otomotif</option>
-                                <option value="Teknik dan Bisnis Sepeda Motor">Teknik Berbisnis Sepeda Motor</option>
+                                <option value="Teknik dan Bisnis Sepeda Motor">Teknik dan Bisnis Sepeda Motor</option>
                             </select>
                         </div>
 
-                        <div class="row mt-4">
-                            <div class="col-md-3">
+                        <div class="row">
                                 <label class="form-label">Kelas : </label>
-                            </div>
                         
-                            <div class="col-md-3 ">
+                            <div class="col-md-4 ">
                             
                                 <select required class="form-select mb-1 " name="kelas" aria-label="Default select example">
                                     <option value="X">X</option>
@@ -86,7 +84,7 @@
                                 </select>
                             </div>    
 
-                            <div class="col-md-3">
+                            <div class="col-md-4">
                                 <select required class="form-select mb-1" name="jurusan2" aria-label="Default select example">
                                     <option value="RPL"> RPL </option>
                                     <option value="TKRO"> TKRO</option>
@@ -94,7 +92,7 @@
                                 </select>
                             </div>
 
-                            <div class="col-md-3">
+                            <div class="col-md-4">
                                 <select required class="form-select mb-1" name="berapa" aria-label="Default select example">
                                     <option value="1"> 1</option>
                                     <option value="2"> 2</option>
