@@ -1,15 +1,62 @@
 <?php
 class Data
 {
-    public $nis ,$nama, $jurusan , $kelas , $jurusan2 , $berapa;
+    public  $nis,
+            $nama, 
+            $jurusan, 
+            $kelas, 
+            $jurusan2, 
+            $berapa,
 
-    public function __construct($a , $b , $c , $d , $e , $f ){
+            $hadir1,
+            $tugas1,
+            $absen1,
+            $ujian1,
+            
+            $hadir2,
+            $tugas2,
+            $absen2,
+            $ujian2,
+            
+            $hadir3,
+            $tugas3,
+            $absen3,
+            $ujian3,
+            
+            $hadir4,
+            $tugas4,
+            $absen4,
+            $ujian4;
+
+    public function __construct($a , $b , $c , $d , $e , $f , $g , $h ,
+    $i , $j , $k , $l , $m , $n , $o , $p , $q ,$r, $s , $t , $u , $v  ){
+
         $this->nis = $a ;
         $this->nama = $b ;
         $this->jurusan = $c ;
         $this->kelas = $d ;
         $this->jurusan2 = $e ;
         $this->berapa= $f ;
+
+        $this->hadir1 = $g;
+        $this->tugas1 = $h;
+        $this->absen1 = $i;
+        $this->ujian1 = $j;
+        
+        $this->hadir2 = $k;
+        $this->tugas2 = $l;
+        $this->absen2 = $m;
+        $this->ujian2 = $n;
+        
+        $this->hadir3 = $o;
+        $this->tugas3 = $p;
+        $this->absen3 = $q;
+        $this->ujian3 = $r;
+        
+        $this->hadir4 = $s;
+        $this->tugas4 = $t;
+        $this->absen4 = $u;
+        $this->ujian4 = $v;
     }
 
     public function getKelas(){
@@ -18,7 +65,7 @@ class Data
 
 }
 
-class Indonesia 
+class Indonesia extends Data
 {
     public $hadir1 , $tugas1, $absen1 , $ujian1;
 
@@ -41,7 +88,7 @@ class Indonesia
 
 
 }
-class Inggris
+class Inggris extends Data
 {
     public $hadir2 , $tugas2, $absen2 , $ujian2;
 
@@ -64,7 +111,7 @@ class Inggris
 
 
 }
-class Matematika 
+class Matematika extends Data
 {
     public $hadir3 , $tugas3, $absen3 , $ujian3;
 
@@ -87,7 +134,7 @@ class Matematika
 
 
 }
-class Produktif
+class Produktif extends Data
 {
     public $hadir4 , $tugas4, $absen4 , $ujian4;
 

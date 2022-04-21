@@ -99,7 +99,36 @@
                                         </tr>
                                     </thead>
 
-                                    <?php $data = new Data( $nis, $nama , $jurusan , $kelas , $jurusan2 , $berapa ); ?>
+                                    <?php $data = new Data(
+                                        
+                                        $nis, 
+                                        $nama, 
+                                        $jurusan, 
+                                        $kelas, 
+                                        $jurusan2, 
+                                        $berapa,
+
+                                        $hadir1,
+                                        $tugas1,
+                                        $absen1,
+                                        $ujian1,
+                                        
+                                        $hadir2,
+                                        $tugas2,
+                                        $absen2,
+                                        $ujian2,
+                                        
+                                        $hadir3,
+                                        $tugas3,
+                                        $absen3,
+                                        $ujian3,
+                                        
+                                        $hadir4,
+                                        $tugas4,
+                                        $absen4,
+                                        $ujian4
+                                        
+                                    ); ?>
 
                                     <tbody>
                                         <tr class="table-secondary" >
@@ -156,31 +185,31 @@
                                     <tbody>
                                         <tr class="table-secondary " >
                                             <td>Nilai Kehadiran</td>
-                                            <td class="text-center" > <?= $hadir1 ?></td>
-                                            <td class="text-center" > <?= $hadir2 ?></td>
-                                            <td class="text-center" > <?= $hadir3 ?></td>
-                                            <td class="text-center" > <?= $hadir4 ?></td>
+                                            <td class="text-center" > <?= $indonesia->hadir1 ?></td>
+                                            <td class="text-center" > <?= $inggris->hadir2 ?></td>
+                                            <td class="text-center" > <?= $matematika->hadir3 ?></td>
+                                            <td class="text-center" > <?= $produktif->hadir4 ?></td>
                                         </tr>
                                         <tr class="table-secondary" >
                                             <td>Nilai Tugas</td>
-                                            <td class="text-center" > <?= $tugas1 ?></td>
-                                            <td class="text-center" > <?= $tugas2 ?></td>
-                                            <td class="text-center" > <?= $tugas3 ?></td>
-                                            <td class="text-center" > <?= $tugas4 ?></td>
+                                            <td class="text-center" > <?= $indonesia->tugas1 ?></td>
+                                            <td class="text-center" > <?= $inggris->tugas2 ?></td>
+                                            <td class="text-center" > <?= $matematika->tugas3 ?></td>
+                                            <td class="text-center" > <?= $produktif->tugas4 ?></td>
                                         </tr>
                                         <tr class="table-secondary" >
                                             <td>Nilai Absen</td>
-                                            <td class="text-center" > <?= $absen1 ?></td>
-                                            <td class="text-center" > <?= $absen2 ?></td>
-                                            <td class="text-center" > <?= $absen3 ?></td>
-                                            <td class="text-center" > <?= $absen4 ?></td>
+                                            <td class="text-center" > <?= $indonesia->absen1 ?></td>
+                                            <td class="text-center" > <?= $inggris-> absen2 ?></td>
+                                            <td class="text-center" > <?= $matematika->absen3 ?></td>
+                                            <td class="text-center" > <?= $produktif-> absen4 ?></td>
                                         </tr>
                                         <tr class="table-secondary" >
                                             <td>Nilai Ujian</td>
-                                            <td class="text-center" > <?= $ujian1 ?></td>
-                                            <td class="text-center" > <?= $ujian2 ?></td>
-                                            <td class="text-center" > <?= $ujian3 ?></td>
-                                            <td class="text-center" > <?= $ujian4 ?></td>
+                                            <td class="text-center" > <?= $indonesia->ujian1 ?></td>
+                                            <td class="text-center" > <?= $inggris-> ujian2 ?></td>
+                                            <td class="text-center" > <?= $matematika->ujian3 ?></td>
+                                            <td class="text-center" > <?= $produktif-> ujian4 ?></td>
                                         </tr>
                                     </tbody>   
                                     <thead>
