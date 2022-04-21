@@ -6,30 +6,9 @@ class Data
             $jurusan, 
             $kelas, 
             $jurusan2, 
-            $berapa,
+            $berapa;
 
-            $hadir1,
-            $tugas1,
-            $absen1,
-            $ujian1,
-            
-            $hadir2,
-            $tugas2,
-            $absen2,
-            $ujian2,
-            
-            $hadir3,
-            $tugas3,
-            $absen3,
-            $ujian3,
-            
-            $hadir4,
-            $tugas4,
-            $absen4,
-            $ujian4;
-
-    public function __construct($a , $b , $c , $d , $e , $f , $g , $h ,
-    $i , $j , $k , $l , $m , $n , $o , $p , $q ,$r, $s , $t , $u , $v  ){
+    public function __construct($a , $b , $c , $d , $e , $f ){
 
         $this->nis = $a ;
         $this->nama = $b ;
@@ -37,26 +16,6 @@ class Data
         $this->kelas = $d ;
         $this->jurusan2 = $e ;
         $this->berapa= $f ;
-
-        $this->hadir1 = $g;
-        $this->tugas1 = $h;
-        $this->absen1 = $i;
-        $this->ujian1 = $j;
-        
-        $this->hadir2 = $k;
-        $this->tugas2 = $l;
-        $this->absen2 = $m;
-        $this->ujian2 = $n;
-        
-        $this->hadir3 = $o;
-        $this->tugas3 = $p;
-        $this->absen3 = $q;
-        $this->ujian3 = $r;
-        
-        $this->hadir4 = $s;
-        $this->tugas4 = $t;
-        $this->absen4 = $u;
-        $this->ujian4 = $v;
     }
 
     public function getKelas(){
@@ -67,7 +26,7 @@ class Data
 
 class Indonesia extends Data
 {
-    public $hadir1 , $tugas1, $absen1 , $ujian1;
+    private $hadir1 , $tugas1, $absen1 , $ujian1;
 
     public function __construct($hadir1 , $tugas1, $absen1 , $ujian1){
 
@@ -86,11 +45,24 @@ class Indonesia extends Data
         return $hasil = $hadir1 + $tugas1 + $absen1 + $ujian1 ;
     }
 
+    public function gethadir1(){
+       return $this->hadir1;
+    }
+    public function gettugas1(){
+        return  $this->tugas1;
+    }
+    public function getabsen1(){
+        return  $this->absen1;
+    }
+    public function getujian1(){
+        return  $this->ujian1;
+    }
 
+    
 }
 class Inggris extends Data
 {
-    public $hadir2 , $tugas2, $absen2 , $ujian2;
+    private $hadir2 , $tugas2, $absen2 , $ujian2;
 
     public function __construct($hadir2 , $tugas2, $absen2 , $ujian2){
 
@@ -101,19 +73,32 @@ class Inggris extends Data
     }
 
     public function hitung(){
-        $hadir1 =  0.15 * $this->hadir2 ; 
-        $tugas1 =  0.20 * $this->tugas2 ; 
-        $absen1 =  0.40 * $this->absen2 ; 
-        $ujian1 =  0.25 * $this->ujian2 ;
+        $hadir2 =  0.15 * $this->hadir2 ; 
+        $tugas2 =  0.20 * $this->tugas2 ; 
+        $absen2 =  0.40 * $this->absen2 ; 
+        $ujian2 =  0.25 * $this->ujian2 ;
         
-        return $hasil = $hadir1 + $tugas1 + $absen1 + $ujian1 ;
+        return $hasil = $hadir2 + $tugas2 + $absen2 + $ujian2 ;
+    }
+
+    public function gethadir2(){
+        return $this->hadir2;
+    }
+    public function gettugas2(){
+        return $this->tugas2;
+    }
+    public function getabsen2(){
+        return $this->absen2;
+    }
+    public function getujian2(){
+        return $this->ujian2;
     }
 
 
 }
 class Matematika extends Data
 {
-    public $hadir3 , $tugas3, $absen3 , $ujian3;
+    private $hadir3 , $tugas3, $absen3 , $ujian3;
 
     public function __construct($hadir3 , $tugas3, $absen3 , $ujian3){
 
@@ -124,19 +109,31 @@ class Matematika extends Data
     }
 
     public function hitung(){
-        $hadir1 =  0.15 * $this->hadir3 ; 
-        $tugas1 =  0.20 * $this->tugas3; 
-        $absen1 =  0.40 * $this->absen3 ; 
-        $ujian1 =  0.25 * $this->ujian3 ;
+        $hadir3 =  0.15 * $this->hadir3 ; 
+        $tugas3 =  0.20 * $this->tugas3; 
+        $absen3 =  0.40 * $this->absen3 ; 
+        $ujian3 =  0.25 * $this->ujian3 ;
         
-        return $hasil = $hadir1 + $tugas1 + $absen1 + $ujian1 ;
+        return $hasil = $hadir3 + $tugas3 + $absen3 + $ujian3 ;
     }
 
+    public function gethadir3(){
+        return $this->hadir3;
+    }
+    public function gettugas3(){
+        return $this->tugas3;
+    }
+    public function getabsen3(){
+        return $this->absen3;
+    }
+    public function getujian3(){
+        return $this->ujian3;
+    }
 
 }
 class Produktif extends Data
 {
-    public $hadir4 , $tugas4, $absen4 , $ujian4;
+    private $hadir4 , $tugas4, $absen4 , $ujian4;
 
     public function __construct($hadir4 , $tugas4, $absen4 , $ujian4){
 
@@ -147,12 +144,25 @@ class Produktif extends Data
     }
 
     public function hitung(){
-        $hadir1 =  0.15 * $this->hadir4 ; 
-        $tugas1 =  0.20 * $this->tugas4 ; 
-        $absen1 =  0.40 * $this->absen4 ; 
-        $ujian1 =  0.25 * $this->ujian4 ;
+        $hadir4=  0.15 * $this->hadir4 ; 
+        $tugas4=  0.20 * $this->tugas4 ; 
+        $absen4=  0.40 * $this->absen4 ; 
+        $ujian4=  0.25 * $this->ujian4 ;
         
-        return $hasil = $hadir1 + $tugas1 + $absen1 + $ujian1 ;
+        return $hasil = $hadir4 + $tugas4 + $absen4 + $ujian4 ;
+    }
+
+    public function gethadir4(){
+        return $this->hadir4;
+    }
+    public function gettugas4(){
+        return  $this->tugas4;
+    }
+    public function getabsen4(){
+        return  $this->absen4;
+    }
+    public function getujian4(){
+        return  $this->ujian4;
     }
 
 
