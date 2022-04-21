@@ -46,7 +46,7 @@
 
                         <!-- Judul -->
                         <center class="mb-4">
-                            <h5  class="rounded" ><b> Nilai Ujian Sekolah <br> SMK ASSALAAM BANDUNG</b></h5> 
+                            <h3 class="rounded" ><b> Nilai Ujian Sekolah <br> SMK ASSALAAM BANDUNG</b></h3> 
                         </center>
                         <!-- >> Judul -->
 
